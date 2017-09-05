@@ -1,0 +1,6 @@
+server:
+  port: 7001
+
+starter.service.props.testValue: dev.value
+
+logging.level.com.sprinthive: DEBUG
