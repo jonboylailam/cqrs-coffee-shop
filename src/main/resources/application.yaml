@@ -1,5 +1,8 @@
 server:
   port: 7001
+  jackson:
+    serialization.write_dates_as_timestamps: false
+    deserialization.adjust_dates_to_context_time_zone: false
 
 starter.service.props.testValue: dev.value
 
