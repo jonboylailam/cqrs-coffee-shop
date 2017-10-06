@@ -1,6 +1,6 @@
-package com.sprinthive.starter.heath;
+package com.sprinthive.coffeshop.heath;
 
-import com.sprinthive.starter.PropsService;
+import com.sprinthive.coffeshop.PropsService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

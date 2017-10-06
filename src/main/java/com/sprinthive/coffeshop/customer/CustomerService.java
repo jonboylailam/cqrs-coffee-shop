@@ -1,4 +1,4 @@
-package com.sprinthive.starter.customer;
+package com.sprinthive.coffeshop.customer;
 
 import org.springframework.stereotype.Service;
 

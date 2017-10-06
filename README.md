@@ -1,7 +1,6 @@
-# Spring Starter
+# The Event sourcing, CQRS coffee shop
 
-Purpose of this project is to provide a good starting point for building a SprintHive service and
-to cover some basic tasks.
+The purpose of this project is to explore how to implement Event sourcing and CQRS.
 
 ## Running
 
@@ -60,3 +59,7 @@ To debug a test:
 
     # create executable jar see <project-home>/bin/run*.sh for example 
     gradle bootRepackage
+
+## References 
+
+[https://blog.sebastian-daschner.com/entries/event_sourcing_cqrs_video_course]()

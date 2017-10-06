@@ -1,6 +1,6 @@
-package com.sprinthive.starter;
+package com.sprinthive.coffeshop;
 
-import com.sprinthive.starter.heath.HeathCheckException;
+import com.sprinthive.coffeshop.heath.HeathCheckException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.env.Environment;
 

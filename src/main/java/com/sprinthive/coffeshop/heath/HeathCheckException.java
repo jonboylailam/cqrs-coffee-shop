@@ -1,4 +1,4 @@
-package com.sprinthive.starter.heath;
+package com.sprinthive.coffeshop.heath;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

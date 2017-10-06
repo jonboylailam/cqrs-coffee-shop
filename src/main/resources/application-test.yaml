@@ -1,1 +1,6 @@
-starter.service.props.testValue: test.value
+coffeshop.service.props.testValue: test.value
+
+spring:
+  data:
+   mongodb:
+    database: CoffeeShopTest

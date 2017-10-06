@@ -1,4 +1,4 @@
-package com.sprinthive.starter;
+package com.sprinthive.coffeshop;
 
 import lombok.Builder;
 import lombok.Value;

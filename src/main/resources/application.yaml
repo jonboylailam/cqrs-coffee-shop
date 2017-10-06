@@ -2,11 +2,115 @@ server:
   port: 7001
 spring:
   application:
-    name: spring-starter
+    name: cqrs-coffee-shop
   jackson:
     serialization.write_dates_as_timestamps: false
     deserialization.adjust_dates_to_context_time_zone: false
+  data:
+   mongodb:
+    database: CoffeeShop
+  cloud:
+    stream:
+      bindings:
+        orderPlacedProducer:
+          destination: coffee-shop
+          contentType: application/json
+        orderPlacedConsumer:
+          destination: coffee-shop
+          group: order-placed-group
+          durableSubscription: true
+        orderAcceptedProducer:
+          destination: coffee-shop
+          contentType: application/json
+        orderAcceptedConsumer:
+          destination: coffee-shop
+          group: order-accepted-group
+          durableSubscription: true
+        orderDeliveredProducer:
+          destination: coffee-shop
+          contentType: application/json
+        orderDeliveredConsumer:
+          destination: coffee-shop
+          group: order-delivered-group
+          durableSubscription: true
+        beansValidatedProducer:
+          destination: coffee-shop
+          contentType: application/json
+        beansValidatedConsumer:
+          destination: coffee-shop
+          group: beans-validated-group
+          durableSubscription: true
+        brewStartedProducer:
+          destination: coffee-shop
+          contentType: application/json
+        brewStartedConsumer:
+          destination: coffee-shop
+          group: brew-started-group
+          durableSubscription: true
+        brewFinishedProducer:
+          destination: coffee-shop
+          contentType: application/json
+        brewFinishedConsumer:
+          destination: coffee-shop
+          group: brew-finished-group
+          durableSubscription: true
+      rabbit:
+        bindings:
+          orderPlacedProducer:
+              producer:
+                routingKeyExpression: '''order-placed'''
+                exchangeAutoDelete: false
+                exchangeDurable: true
+                exchangeType: topic
+          orderPlacedConsumer:
+            consumer:
+              bindingRoutingKey: 'order-placed'
+          orderAcceptedProducer:
+              producer:
+                routingKeyExpression: '''order-accepted'''
+                exchangeAutoDelete: false
+                exchangeDurable: true
+                exchangeType: topic
+          orderAcceptedConsumer:
+            consumer:
+              bindingRoutingKey: 'order-accepted'
+          orderDeliveredProducer:
+              producer:
+                routingKeyExpression: '''order-delivered'''
+                exchangeAutoDelete: false
+                exchangeDurable: true
+                exchangeType: topic
+          orderDeliveredConsumer:
+            consumer:
+              bindingRoutingKey: 'order-delivered'
+          beansValidatedProducer:
+              producer:
+                routingKeyExpression: '''beans-validated'''
+                exchangeAutoDelete: false
+                exchangeDurable: true
+                exchangeType: topic
+          beansValidatedConsumer:
+            consumer:
+              bindingRoutingKey: 'beans-validated'
+          brewStartedProducer:
+              producer:
+                routingKeyExpression: '''brew-started'''
+                exchangeAutoDelete: false
+                exchangeDurable: true
+                exchangeType: topic
+          brewStartedConsumer:
+            consumer:
+              bindingRoutingKey: 'brew-started'
+          brewFinishedProducer:
+              producer:
+                routingKeyExpression: '''brew-finished'''
+                exchangeAutoDelete: false
+                exchangeDurable: true
+                exchangeType: topic
+          brewFinishedConsumer:
+            consumer:
+              bindingRoutingKey: 'brew-finished'
 
-starter.service.props.testValue: dev.value
+coffeshop.service.props.testValue: dev.value
 
 logging.level.com.sprinthive: DEBUG

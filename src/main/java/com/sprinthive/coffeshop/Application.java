@@ -1,4 +1,4 @@
-package com.sprinthive.starter;
+package com.sprinthive.coffeshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

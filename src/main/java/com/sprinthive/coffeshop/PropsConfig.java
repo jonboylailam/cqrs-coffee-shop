@@ -1,4 +1,4 @@
-package com.sprinthive.starter;
+package com.sprinthive.coffeshop;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,7 +12,7 @@ public class PropsConfig {
     @Autowired
     Environment environment;
 
-    @Value("${starter.service.props.testValue:default.testValue}")
+    @Value("${coffeshop.service.props.testValue:default.testValue}")
     private String testValue;
 
     @Bean

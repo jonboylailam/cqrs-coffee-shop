@@ -1,6 +1,9 @@
 package com.sprinthive.starter.customer;
 
-import com.sprinthive.starter.ResponseMsg;
+import com.sprinthive.coffeshop.ResponseMsg;
+import com.sprinthive.coffeshop.customer.Customer;
+import com.sprinthive.coffeshop.customer.CustomerNotFoundException;
+import com.sprinthive.coffeshop.customer.CustomerService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

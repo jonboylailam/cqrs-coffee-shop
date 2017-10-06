@@ -1,6 +1,6 @@
-package com.sprinthive.starter;
+package com.sprinthive.coffeshop;
 
-import com.sprinthive.starter.customer.CustomerNotFoundException;
+import com.sprinthive.coffeshop.customer.CustomerNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

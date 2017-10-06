@@ -1,1 +1,9 @@
 #starter.service.props.testValue: overriden.value
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+  rabbitmq:
+    username: jon
+    password: password

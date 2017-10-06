@@ -1,4 +1,4 @@
-package com.sprinthive.starter.customer;
+package com.sprinthive.coffeshop.customer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
