@@ -62,4 +62,4 @@ To debug a test:
 
 ## References 
 
-[https://blog.sebastian-daschner.com/entries/event_sourcing_cqrs_video_course]()
+[https://blog.sebastian-daschner.com/entries/event_sourcing_cqrs_video_course](https://blog.sebastian-daschner.com/entries/event_sourcing_cqrs_video_course)
